@@ -1,45 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Osvaldo Profile</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banca personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+        .container {
+            display: flex;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .left {
+            flex: 1;
+            padding: 20px;
+            background-color: #00ABEB;
+            color: #fff;
+        }
+        .right {
+            flex: 1;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: black;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .forgot-password {
+            font-size: 14px;
+            color: black;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .register {
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+            margin-top: 20px;
+        }
+      /* Ajustes para la clase .left */
+.left {
+    flex: 1;
+    padding: 20px;
+    background-color: #00ABEB;
+    color: #fff;
+    position: relative; /* Establece la posición relativa para .left */
+}
+
+/* Nuevos estilos para la clase .register */
+.register {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-top: 20px;
+    position: absolute; /* Establece la posición absoluta para .register dentro de .left */
+    bottom: 10px; /* Ajusta la distancia desde la parte inferior */
+    left: 10px; /* Ajusta la distancia desde la izquierda */
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilo adicional para mejorar la apariencia del enlace */
+.register a {
+    color: #fff;
+    text-decoration: none;
+}
+
+    </style>
 </head>
-
 <body>
-  <h1>
-    Mi nombre es Osvaldo González.
-  </h1>
-  <p>
-    Tengo 26 años y estoy casi graduado como ingenerio en informatica por la Universidad de Panamá, solo falta ajustar ciertos tramites. </br>
-  Actualmente estoy en el programa de Siempre Listo 2024 por el Banco General. </br>
-   Siempre me ha gustado el mundo de las computadoras y eso me llevo a elegir mi carrera universitaria. </br> Cuento con habilidades en la siguientes áreas: </br>
-  <ul>
-    <li>Lenguajes de programación</li>
-    <li>Manejo de base de datos</li>
-    <li>Análisis de datos con Python</li>
-  </ul>  
-<div>
-  <dl>
-  Experiencia: <br>
-    <dt>ACP</dt>
-    <dd>Pasante de operaciones y estimaciones de transito</dd>
-	</dl>
+    <div class="container">
+        <div class="left">
+            <h1>Te damos la bienvenida al portal Personal Banking</h1>
+            <p>¿Eres nuevo en el banco?
+              Crea tu clave.</p>
+          <p class="register">¿Aún no tienes cuenta? <a href="#">Registrate ahora</a></p>
+        </div>
+        <div class="right">
+            <h1>Inicio de sesión</h1>
+            <form action="#">
+                <input type="email" placeholder="Ingresa tu correo electrónico">
+                <input type="password" placeholder="Ingresa tu clave de internet">
+                <button type="submit">Iniciar sesión</button>
+            </form>
+            <p class="forgot-password">¿Tienes problemas con tu cuenta? <a href="#">Recuperar contraseña</a></p>            
+        </div>
     </div>
-  
-<label>
-  Escribe tu mensaje de contacto:
-  </label> 
-  <br>
- <textarea>
-   Dudas aquí...
-    </textarea>
-    <button>Enviar</button>
-    
-    <footer>
-    <p> Autor: Osvaldo González derechos reservado</p>
-    </footer>
 </body>
-
 </html>
